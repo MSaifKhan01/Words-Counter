@@ -1,0 +1,171 @@
+/* Apply a basic mobile-first responsive design */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* Navbar*/
+nav {
+    background-color: #1d3557;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px;
+}
+/* style of logo  */
+#logo {
+    max-width: 100px; 
+    height: auto; 
+    padding: 10px; 
+    background-color: #fff; 
+    border-radius: 50%; /* Making the logo a circle */
+    
+}
+
+#logo img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; 
+
+    /* Adjusting the gap for smaller screens */
+    @media (max-width: 768px) {
+        gap: 10px; 
+    }
+}
+
+
+nav li {
+    margin: 0 10px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+  /* navbar end */
+  h1 {
+    font-size: 24px;
+  }
+  
+  #url {
+    width: 100%;
+    max-width: 300px; /* Limit the input field width on larger screens */
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+
+  #entrBTn {
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #entrBTn:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  td {
+    border: 1px solid #ccc;
+  }
+  
+  /* Center the text in the "Actions" cell */
+  td:nth-child(5) {
+    text-align: center;
+  }
+  
+  /* Center the text in the favorite cell */
+  td:nth-child(3) {
+    text-align: center;
+  }
+  
+  /* Ensure the image links do not overflow the table cell */
+  td:nth-child(4) {
+    word-break: break-word;
+  }
+  
+  /* Style the buttons */
+  button {
+    margin: 10px;
+  }
+  
+  /* Set width and background color for ImagesDiv */
+  #ImagesDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: aquamarine;
+  }
+  
+  /* Reduce button padding on small screens */
+  @media screen and (max-width: 600px) {
+    button {
+      padding: 5px 10px;
+    }
+  }
+  
+  /* Responsive table layout on small screens */
+  @media screen and (max-width: 600px) {
+    table {
+      display: flex;
+    }
+  
+    th, td {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  
+    tr {
+      margin-bottom: 20px;
+    }
+    #tableHeading{
+        display: grid;
+        justify-content: space-between;
+        
+    }
+    #actionCell{
+        margin-bottom: 2px;
+    }
+  }
+  
+  /* Adjust font size for smaller screens */
+  @media screen and (max-width: 400px) {
+    h1 {
+      font-size: 20px;
+    }
+
+    table {
+      display: block;
+    }
+  }

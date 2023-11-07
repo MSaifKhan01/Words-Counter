@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Word Count App</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+
+
+    <nav>
+        <div id="logo">
+          <img
+            src="https://img.freepik.com/free-photo/layout-icon-front-side_187299-39492.jpg?w=740&t=st=1699385274~exp=1699385874~hmac=ebe3b8cd1416f5b2bd53eb58cf1bb35a01d008df67e7cebc1b235dfe4859f8bf"
+            alt=""
+          />
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          
+        </ul>
+      </nav>
+  <h1>Word Count App</h1>
+  <label for="url">Enter URL: </label>
+  <input type="text" id="url">
+  <button onclick="checkWordCount()" id="entrBTn">Check Word Count</button>
+
+  <h2>Search History</h2>
+  <table id="history">
+    <thead>
+      <tr id="tableHeading">
+        <th>Domain</th>
+        <th>Word Count</th>
+        <th>Favorite</th>
+        <th>Media-Links</th>
+        <th id="actionCell">Actions</th>
+      </tr>
+    </thead>
+    <tbody id="history-body">
+    </tbody>
+  </table>
+
+ 
+</body>
+
+<script src="index.js"></script>
+</html>
