@@ -3,14 +3,7 @@
 ```markdown
 # Word Count App
 
-## Table of Contents
-1. [Description](#description)
-2. [Prerequisites](#prerequisites)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Endpoints](#endpoints)
-6. [Example Requests](#example-requests)
-7. [How to Use from the Client Side](#how-to-use-from-the-client-side)
+
 
 ## Description
 The Word Count App is a web application that allows you to analyze the word count and images of any webpage by providing its URL. It also provides features to mark insights as favorites and manage your search history.
