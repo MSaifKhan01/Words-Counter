@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.use("/",wordCountRouter)
+app.use("/url",wordCountRouter)
 
 
 app.listen(3000, () => {
