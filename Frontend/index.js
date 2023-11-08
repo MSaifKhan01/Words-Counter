@@ -13,6 +13,8 @@ async function checkWordCount() {
 
   if (response.ok) {
     // console.log(response)
+    Swal.fire('History Created');
+
     GetSearchHistory();
   }
 }
@@ -28,8 +30,11 @@ async function GetSearchHistory() {
     historyBody.innerHTML = '';
 
     data.searchHistory.forEach((ele, index) => {
+      
       const row = document.createElement('tr');
 
+      const SrNo = document.createElement('td');
+      SrNo.innerText=index+1
       const domainCell = document.createElement('td');
       domainCell.textContent = ele.url;
 
@@ -57,12 +62,13 @@ async function GetSearchHistory() {
       markFavoriteButton.onclick = () => markFavorite(index);
 
       const removeButton = document.createElement('button');
-      removeButton.textContent = 'Remove History';
+      removeButton.innerText = 'Remove History';
       removeButton.onclick = () => removeHistory(index);
 
       actionsCell.appendChild(markFavoriteButton);
       actionsCell.appendChild(removeButton);
 
+      row.appendChild(SrNo)
       row.appendChild(domainCell);
       row.appendChild(wordCountCell);
       row.appendChild(favoriteCell);
@@ -81,6 +87,8 @@ async function markFavorite(ind) {
   });
 
   if (response.ok) {
+    Swal.fire('Marked As Favorite successful');
+
     GetSearchHistory();
   }
 }
