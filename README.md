@@ -3,8 +3,9 @@
 
 # Word Count App
 
-**Frontend**: [Word Count App](https://web-scrape-words-counter.netlify.app/)
+**Frontend**: [Word Count App](https://web-scrape-words-counter.netlify.app/)  
 **Backend**: [Word Count App API](https://words-counter.onrender.com)
+
 
 ## Description
 The Word Count App is a web application that allows you to analyze the word count and images of any webpage by providing its URL. It also provides features to mark insights as favorites and manage your search history.
