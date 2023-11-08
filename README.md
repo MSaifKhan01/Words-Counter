@@ -1,8 +1,9 @@
 
+
+
 # Word Count App
 
-
-**Frontend**: [Word Count App](https://web-words-counter.netlify.app/)
+**Frontend**: [Word Count App](https://web-scrape-words-counter.netlify.app/)
 **Backend**: [Word Count App API](https://words-counter.onrender.com)
 
 ## Description
@@ -18,12 +19,14 @@ Before you start, make sure you have the following:
 The Word Count App is built using the following technologies and Node.js modules:
 - Node.js
 - Express.js
-- HTML/CSS
-- Node Mon
+- Nodemon
 - Express
 - Body-parser
 - Cheerio
 - Axios
+- MongoDB (Database)
+- HTML/CSS
+
 
 ## Installation
 1. Clone this repository to your local machine.
@@ -40,19 +43,20 @@ The Word Count App is built using the following technologies and Node.js modules
    npm run server
    ```
 
-The server will start at [https://words-counter.onrender.com](https://words-counter.onrender.com).
+The server will start at [https://words-counter.onrender.com](https://words-counter.onrender.com), and MongoDB is used to store and manage data related to search history.
 
-## Usage
-1. Access the Word Count App in your web browser at `https://web-words-counter.netlify.app/`.
-2. Enter a URL and click "Check Word Count" to analyze the webpage.
-3. View word count and image URLs in the table.
-4. Mark insights as favorites and manage your search history.
+## Database and Relationships
+The Word Count App uses MongoDB as its database to store search history and url. It employs a data model that establishes a relationship between IP addresses and url. When a user analyzes a webpage, their IP address is recorded and url are associated with that IP.
 
-## Endpoints
+### Data Models
+- **IPModel**: Stores IP addresses of users.
+- **WordCounterModel**: Represents insights and search history and contains references to the associated IP.
+
+### Endpoints
 - `POST /url/addUrl`: Add a new URL for word count analysis.
-- `GET /url/getData`: Retrieve the search history.
+- `GET /url/getData`: Retrieve the search history associated with the user's IP.
 - `PUT /url/update/:id`: Mark an insight as a favorite.
-- `DELETE /url/delete/:id`: Remove a URL from search history.
+- `DELETE /url/delete/:id`: Remove a URL from the user's search history.
 
 ## Example Requests
 ### POST /url/addUrl
@@ -69,12 +73,10 @@ Mark the first insight as a favorite.
 Remove the second URL from search history.
 
 ## How to Use from the Client Side
-1. Access the Word Count App in your web browser at `https://web-words-counter.netlify.app/`.
+1. Access the Word Count App in your web browser at `https://web-scrape-words-counter.netlify.app/`.
 2. Enter a URL and click "Check Word Count" to analyze the webpage.
 3. View word count and image URLs in the table.
 4. Mark insights as favorites and manage your search history.
-
-
 
 ```
 
