@@ -1,4 +1,4 @@
-```markdown
+
 # Word Count App
 
 
