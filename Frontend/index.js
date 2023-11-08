@@ -48,6 +48,7 @@ async function GetSearchHistory() {
         if(ind<5){
         const imageUrlsCell = document.createElement('td');
         imageUrlsCell.textContent=`${ele.url} ${el} ,`
+        imageUrlsCell.setAttribute('id', 'ImagesTD');
         ImagesDiv.appendChild(imageUrlsCell)
         }
       })
