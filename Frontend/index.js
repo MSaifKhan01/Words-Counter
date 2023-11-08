@@ -1,6 +1,7 @@
 
 async function checkWordCount() {
-  const url = document.getElementById('url').value;
+  const urlInput = document.getElementById('url');
+  const url = urlInput.value;
 
   // Send a POST request to the server to get word count and save the URL
   const response = await fetch('http://localhost:3000/url/addUrl', {
@@ -13,9 +14,11 @@ async function checkWordCount() {
 
   if (response.ok) {
     // console.log(response)
+    urlInput.value = '';
     Swal.fire('History Created');
-
+   
     GetSearchHistory();
+    
   }
 }
 
@@ -111,5 +114,5 @@ async function removeHistory(ind) {
   }
 }
 
-// Load the initial search history
+// Loading the initial search history
 GetSearchHistory();

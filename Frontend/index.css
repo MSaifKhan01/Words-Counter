@@ -134,6 +134,7 @@ button {
 
 td button:nth-child(2) {
   background-color: #e63946;
+  padding: 5px;
  
   color: black;
   font-weight: 600;
@@ -145,6 +146,7 @@ td button:nth-child(2) {
 td button:nth-child(1) {
 
   background-color: #caffbf;
+  padding: 5px;
   color: black;
   font-weight: 600;
   border: none;
@@ -187,3 +189,66 @@ td button:nth-child(1) {
     font-size: 20px;
   }
 }
+
+
+/* this css for About Page  */
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  overflow-x: hidden; 
+}
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #1d3557;
+}
+
+p {
+  font-size: 18px;
+}
+
+.highlight {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.features {
+  text-align: left;
+}
+
+.feature {
+  margin: 20px 0;
+}
+
+.feature h2 {
+  color: #1d3557;
+}
+
+.feature p {
+  font-size: 16px;
+}
+.imageDiv{
+    width: 50%;
+}
+
+
