@@ -4,7 +4,7 @@ async function checkWordCount() {
   const url = urlInput.value;
 
   // Send a POST request to the server to get word count and save the URL
-  const response = await fetch('http://localhost:3000/url/addUrl', {
+  const response = await fetch('https://words-counter.onrender.com/url/addUrl', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -24,7 +24,7 @@ async function checkWordCount() {
 
 async function GetSearchHistory() {
   // Fetching search history from the server
-  const response = await fetch('http://localhost:3000/url/getData');
+  const response = await fetch('https://words-counter.onrender.com/url/getData');
 
   if (response.ok) {
     const data = await response.json();
@@ -88,7 +88,7 @@ async function GetSearchHistory() {
 
 async function markFavorite(ind) {
   // Sending a PUT request to mark as a favorite
-  const response = await fetch(`http://localhost:3000/url/update/${ind}`, {
+  const response = await fetch(`https://words-counter.onrender.com/url/update/${ind}`, {
     method: 'PUT',
   });
 
@@ -101,7 +101,7 @@ async function markFavorite(ind) {
 
 async function removeHistory(ind) {
   // Sending a DELETE request to removing  search history
-  const response = await fetch(`http://localhost:3000/url/delete/${ind}`, {
+  const response = await fetch(`https://words-counter.onrender.com/url/delete/${ind}`, {
     method: 'DELETE',
   });
 

@@ -1,9 +1,9 @@
-
-
 ```markdown
 # Word Count App
 
 
+**Frontend**: [Word Count App](https://web-words-counter.netlify.app/)
+**Backend**: [Word Count App API](https://words-counter.onrender.com)
 
 ## Description
 The Word Count App is a web application that allows you to analyze the word count and images of any webpage by providing its URL. It also provides features to mark insights as favorites and manage your search history.
@@ -13,6 +13,17 @@ Before you start, make sure you have the following:
 - Node.js installed
 - Npm (Node Package Manager) installed
 - A modern web browser
+
+## Technologies and Modules
+The Word Count App is built using the following technologies and Node.js modules:
+- Node.js
+- Express.js
+- HTML/CSS
+- Node Mon
+- Express
+- Body-parser
+- Cheerio
+- Axios
 
 ## Installation
 1. Clone this repository to your local machine.
@@ -29,10 +40,10 @@ Before you start, make sure you have the following:
    npm run server
    ```
 
-The server will start at `http://localhost:3000`.
+The server will start at [https://words-counter.onrender.com](https://words-counter.onrender.com).
 
 ## Usage
-1. Access the Word Count App in your web browser at `http://localhost:3000`.
+1. Access the Word Count App in your web browser at `https://web-words-counter.netlify.app/`.
 2. Enter a URL and click "Check Word Count" to analyze the webpage.
 3. View word count and image URLs in the table.
 4. Mark insights as favorites and manage your search history.
@@ -58,9 +69,12 @@ Mark the first insight as a favorite.
 Remove the second URL from search history.
 
 ## How to Use from the Client Side
-1. Access the Word Count App in your web browser at `http://localhost:3000`.
+1. Access the Word Count App in your web browser at `https://web-words-counter.netlify.app/`.
 2. Enter a URL and click "Check Word Count" to analyze the webpage.
 3. View word count and image URLs in the table.
 4. Mark insights as favorites and manage your search history.
+
+
+
 ```
 
